@@ -34,6 +34,7 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['@babel/polyfill', './index.js'],
+        about: './about.js'
     },
     output: {
         filename: `scripts/${filename('js')}`,
@@ -76,7 +77,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpe?g|svg|gif)$/,
+                test: /\.(png|jpe?g|svg|gif|ico)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -121,6 +122,17 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html',
+            filename: 'index.html',
+            favicon: './images/favicon.ico',
+            hash: true,
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template: './about.html',
+            filename: 'about.html',
+            favicon: './images/favicon.ico',
             minify: {
                 collapseWhitespace: isProd
             }

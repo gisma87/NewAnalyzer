@@ -1,0 +1,11 @@
+@import "./__item/menu__item.css";
+@import "./__link/menu__link.css";
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px 101px 0;
+}

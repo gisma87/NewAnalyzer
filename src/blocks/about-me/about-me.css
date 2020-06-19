@@ -1,0 +1,9 @@
+@import "./__photo/about-me__photo.css";
+@import "./__description/about-me__description.css";
+@import "./__title/about-me__title.css";
+@import "./__paragraph/about-me__paragraph.css";
+
+.about-me {
+    display: flex;
+    padding: 80px 104px
+}

@@ -1,0 +1,13 @@
+.search-result__button {
+    background: #FFF;
+    border: #FFF;
+    border-radius: 80px;
+    height: 64px;
+    width: 288px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 64px auto 0;
+}

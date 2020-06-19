@@ -1,0 +1,10 @@
+.commits__link {
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+@import "~normalize.css";
+@import "./fonts.css";
+@import "../blocks/container/container.css";
+@import "../blocks/header/header.css";
+@import "../blocks/menu/menu.css";
+@import "../blocks/about-me/about-me.css";
+@import "../blocks/footer/footer.css";
+@import "../blocks/about/about.css";
+@import "../blocks/stack/stack.css";
+@import "../blocks/commits/commits.css";
+@import "../blocks/opacity/opacity.css";

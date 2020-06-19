@@ -1,0 +1,22 @@
+@import "./__text/commits__text.css";
+@import "./__title/commits__title.css";
+@import "./__link/commits__link.css";
+@import "./__slider-container/commits__slider-container.css";
+@import "./__slider/commits__slider.css";
+@import "./__item/commits__item.css";
+@import "./__data/commits__data.css";
+@import "./__photo/commits__photo.css";
+@import "./__img/commits__img.css";
+@import "./__name/commits__name.css";
+@import "./__email/commits__email.css";
+@import "./__paragraph/commits__paragraph.css";
+@import "./__buttons/commits__buttons.css";
+@import "./__button/commits__button.css";
+
+.commits {
+    background: #F5F6F7;
+    color: #1A1B22;
+    font-style: normal;
+    padding: 72px 0 300px;
+    position: relative;
+}

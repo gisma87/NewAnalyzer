@@ -1,0 +1,5 @@
+.commits__text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 104px 64px;
+}

@@ -1,0 +1,11 @@
+@import "./__copyright/footer__copyright.css";
+@import "./__menu/footer__menu.css";
+@import "./__menu-item/footer__menu-item.css";
+@import "./__links/footer__links.css";
+@import "./__link/footer__link.css";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 104px 25px;
+}

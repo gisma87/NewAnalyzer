@@ -1,0 +1,7 @@
+.commits__slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 2080px;
+    margin-left: -22.5%;
+}

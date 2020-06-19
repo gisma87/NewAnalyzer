@@ -1,0 +1,10 @@
+.search__label {
+    display: block;
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    width: 545px;
+    margin-bottom: 64px;
+}

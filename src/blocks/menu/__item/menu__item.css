@@ -1,0 +1,8 @@
+@import "./_active/menu__item_active.css";
+@import "./_white/menu__item_white.css";
+@import "./_black/menu__item_black.css";
+
+.menu__item {
+    margin-left: 34px;
+}
+

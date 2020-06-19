@@ -1,0 +1,7 @@
+.stack__item {
+    margin-left: 64px;
+}
+
+.stack__item:nth-child(n+3) .stack__logo {
+    margin-top: -16px;
+}

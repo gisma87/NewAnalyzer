@@ -1,0 +1,14 @@
+@import "./__title/stack__title.css";
+@import "./__content/stack__content.css";
+@import "./__tech/stack__tech.css";
+@import "./__items/stack__items.css";
+@import "./__item/stack__item.css";
+
+.stack {
+    height: 334px;
+    background: #F5F6F7;
+    display: flex;
+    justify-content: start;
+    padding: 80px 104px;
+    box-sizing: border-box;
+}
