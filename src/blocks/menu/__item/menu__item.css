@@ -1,8 +1,9 @@
-@import "./_active/menu__item_active.css";
+@import "./_active-black/menu__item_active-black.css";
 @import "./_white/menu__item_white.css";
 @import "./_black/menu__item_black.css";
 
 .menu__item {
+    cursor: pointer;
     margin-left: 34px;
 }
 

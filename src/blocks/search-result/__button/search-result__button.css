@@ -9,5 +9,11 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    cursor: pointer;
     margin: 64px auto 0;
+}
+
+.search-result__button:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
 }

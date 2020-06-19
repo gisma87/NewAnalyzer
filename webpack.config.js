@@ -34,7 +34,8 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['@babel/polyfill', './index.js'],
-        about: './about.js'
+        about: './about.js',
+        analytic: './analytic.js'
     },
     output: {
         filename: `scripts/${filename('js')}`,
@@ -132,6 +133,14 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './about.html',
             filename: 'about.html',
+            favicon: './images/favicon.ico',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new HTMLWebpackPlugin({
+            template: './analytic.html',
+            filename: 'analytic.html',
             favicon: './images/favicon.ico',
             minify: {
                 collapseWhitespace: isProd
