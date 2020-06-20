@@ -2,3 +2,15 @@
     margin-left: 56px;
     width: 600px;
 }
+
+@media screen and (max-width: 768px) {
+    .about-me__description {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-me__description {
+        margin: 0;
+    }
+}

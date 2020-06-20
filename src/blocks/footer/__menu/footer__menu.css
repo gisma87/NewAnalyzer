@@ -3,3 +3,9 @@
     list-style-type: none;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__menu {
+        margin-left: -45px;
+    }
+}

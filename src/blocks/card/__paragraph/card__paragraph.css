@@ -6,3 +6,26 @@
     line-height: 22px;
     color: #1A1B22;
 }
+
+@media screen and (max-width: 768px) {
+    .card__paragraph {
+        margin: 10px 0;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -ms-line-clamp: 4;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        display: -webkit-box;
+        display: box;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__paragraph {
+        margin: 8px 0;
+    }
+}

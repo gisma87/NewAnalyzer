@@ -33,20 +33,14 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './index.js'],
+        // main: ['@babel/polyfill', './index.js'],
+        main: './index.js',
         about: './about.js',
         analytic: './analytic.js'
     },
     output: {
         filename: `scripts/${filename('js')}`,
         path: path.resolve(__dirname, 'dist')
-    },
-    resolve: {
-        extensions: ['.js', '.json', '.png'],
-        alias: {
-            '@images': path.resolve(__dirname, 'src/images'),
-            '@': path.resolve(__dirname, 'src'),
-        }
     },
     optimization: optimization(),
     devServer: {

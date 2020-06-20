@@ -3,3 +3,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        grid-gap: 8px;
+    }
+}

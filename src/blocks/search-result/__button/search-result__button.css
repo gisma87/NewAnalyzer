@@ -17,3 +17,17 @@
     transition: opacity 0.3s;
     opacity: 0.8;
 }
+
+@media screen and (max-width: 768px) {
+    .search-result__button {
+        margin: 22px auto 0;
+        height: 56px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search-result__button {
+        margin: 13px auto 0;
+    }
+}

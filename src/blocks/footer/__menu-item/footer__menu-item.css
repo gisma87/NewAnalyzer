@@ -9,3 +9,15 @@
     line-height: 24px;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__menu-item {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__menu-item {
+        margin: 0;
+    }
+}

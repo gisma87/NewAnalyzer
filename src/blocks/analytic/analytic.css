@@ -1,0 +1,25 @@
+@import "./__path/analytic__path.css";
+@import "./__link/analytic__link.css";
+@import "./__topic/analytic__topic.css";
+@import "./__title/analytic__title.css";
+@import "./__week/analytic__week.css";
+@import "./__info/analytic__info.css";
+@import "./__days/analytic__days.css";
+@import "./__days-title/analytic__days-title.css";
+@import "./__table/analytic__table.css";
+@import "./__row-top/analytic__row-top.css";
+@import "./__column/analytic__column.css";
+@import "./__first-column/analytic__first-column.css";
+@import "./__row-axis/analytic__row-axis.css";
+@import "./__axis-percent/analytic__axis-percent.css";
+@import "./__table-date/analytic__table-date.css";
+@import "./__table-day/analytic__table-day.css";
+@import "./__second-column/analytic__second-column.css";
+@import "./__table-percent/analytic__table-percent.css";
+
+.analytic {
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1A1B22;
+}

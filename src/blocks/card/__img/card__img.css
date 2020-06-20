@@ -6,3 +6,15 @@
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 }
+
+@media screen and (max-width: 768px) {
+    .card__img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__img {
+        height: 196px;
+    }
+}
