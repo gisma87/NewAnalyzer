@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/gisma87/NewAnalyzer.git"
   },
+  "browserslist": "> 0.25%, not dead",
   "author": "Mankov Stanislav gisma87@yandex.ru",
   "license": "ISC",
   "bugs": {
@@ -19,16 +20,11 @@
   },
   "homepage": "https://github.com/gisma87/NewAnalyzer#readme",
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
     "autoprefixer": "^9.8.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "babel-preset-env": "^1.7.0",
-    "core-js": "^3.6.5",
-    "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "cssnano-webpack-plugin": "^1.0.3",
     "file-loader": "^6.0.0",
@@ -46,7 +42,8 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.4.1",
     "normalize.css": "^8.0.1"
   }
 }
