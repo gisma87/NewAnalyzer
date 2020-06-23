@@ -7,4 +7,11 @@
     align-items: center;
     text-align: right;
     margin: 0;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.commits__link span {
+    margin-left: 10px;
 }

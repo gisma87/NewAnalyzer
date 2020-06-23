@@ -4,3 +4,9 @@
     line-height: 24px;
     margin: 40px 104px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .analytic__path {
+        margin: 32px 40px 0;
+    }
+}

@@ -7,3 +7,12 @@
     margin-left: 34px;
 }
 
+.menu__item:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .menu__item {
+        margin-left: 11px;
+    }
+}

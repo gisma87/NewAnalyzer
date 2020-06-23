@@ -5,3 +5,9 @@
 .stack__item:nth-child(n+3) .stack__logo {
     margin-top: -16px;
 }
+
+@media screen and (max-width: 768px) {
+    .stack__item {
+        margin: 0;
+    }
+}

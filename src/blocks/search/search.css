@@ -7,7 +7,13 @@
 
 .search {
     background-image: url('../../images/search_background.jpg');
-    height: 576px;
+    height: auto;
     width: 100%;
     color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        height: auto;
+    }
 }

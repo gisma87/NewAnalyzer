@@ -12,3 +12,10 @@
     padding: 80px 104px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+    .stack {
+        padding: 40px 40px 50px;
+        flex-direction: column;
+    }
+}

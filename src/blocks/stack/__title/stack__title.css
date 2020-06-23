@@ -5,6 +5,13 @@
     font-size: 40px;
     line-height: 46px;
     color: #1A1B22;
-    width: 344px;
+    max-width: 344px;
     margin: 0 127px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .stack__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
 }

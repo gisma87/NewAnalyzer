@@ -2,6 +2,16 @@
     font-family: 'Roboto Regular', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    width: 815px;
+    max-width: 815px;
     margin: 25px 0;
+}
+
+.about__text:first-of-type{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about__text {
+        margin: 24px 0;
+    }
 }

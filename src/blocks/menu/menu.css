@@ -8,4 +8,19 @@
     font-weight: 500;
     font-size: 18px;
     margin: 30px 101px 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        margin: 22px 40px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu {
+        margin: 16px 16px 0 0;
+        font-size: 16px;
+        line-height: 24px;;
+    }
 }

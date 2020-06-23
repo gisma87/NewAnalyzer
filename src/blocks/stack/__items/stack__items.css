@@ -4,3 +4,9 @@
     margin: 0;
     padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .stack__items {
+        justify-content: space-around;
+    }
+}

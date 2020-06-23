@@ -20,3 +20,9 @@
     padding: 72px 0 300px;
     position: relative;
 }
+
+@media screen and (max-width: 768px) {
+    .commits {
+        padding: 40px;
+    }
+}
