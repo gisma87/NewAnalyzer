@@ -8,7 +8,7 @@
 
 .card {
     max-width: 400px;
-    max-height: 576px;
+    height: 100%;
     border-radius: 16px;
     background: #FFF;
     cursor: pointer;
