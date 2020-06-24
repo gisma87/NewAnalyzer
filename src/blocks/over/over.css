@@ -1,0 +1,5 @@
+.over:hover {
+    opacity: .8;
+    font-weight: bold;
+    transform: scale(1.005);
+}
