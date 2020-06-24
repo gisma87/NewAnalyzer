@@ -15,12 +15,9 @@
         overflow: hidden;
         -ms-line-clamp: 4;
         -webkit-line-clamp: 4;
-        line-clamp: 4;
         display: -webkit-box;
-        display: box;
         word-wrap: break-word;
         -webkit-box-orient: vertical;
-        box-orient: vertical;
     }
 }
 
