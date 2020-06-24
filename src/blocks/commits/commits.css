@@ -12,6 +12,7 @@
 @import "./__paragraph/commits__paragraph.css";
 @import "./__buttons/commits__buttons.css";
 @import "./__button/commits__button.css";
+@import "./__button-big/commits__button-big.css";
 
 .commits {
     background: #F5F6F7;
@@ -23,6 +24,12 @@
 
 @media screen and (max-width: 768px) {
     .commits {
-        padding: 40px;
+        padding: 33px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits {
+        padding: 32px 16px;
     }
 }

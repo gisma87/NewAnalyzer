@@ -10,13 +10,13 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 814px) {
     .footer__menu-item {
         margin-left: 25px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
     .footer__menu-item {
         margin: 0;
     }

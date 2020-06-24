@@ -7,8 +7,8 @@
 @import "./__link/card__link.css";
 
 .card {
-    width: 400px;
-    height: 576px;
+    max-width: 400px;
+    max-height: 576px;
     border-radius: 16px;
     background: #FFF;
     cursor: pointer;
@@ -16,16 +16,22 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px) {
     .card {
-        width: 224px;
-        height: 420px;
+        max-height: 490px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 900px) {
+    .card {
+        min-width: 224px;
+        max-height: 420px;
+    }
+}
+
+@media screen and (max-width: 490px) {
     .card {
         width: 288px;
-        height: 446px;
+        max-height: 446px;
     }
 }

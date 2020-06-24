@@ -11,7 +11,7 @@
     margin-left: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .menu__item {
         margin-left: 11px;
     }

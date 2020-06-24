@@ -8,13 +8,15 @@
 @media screen and (max-width: 768px) {
     .header__logo {
         margin: 22px 0 0 40px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .header__logo {
         margin: 16px 0 0 16px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }

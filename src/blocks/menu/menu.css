@@ -17,7 +17,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .menu {
         margin: 16px 16px 0 0;
         font-size: 16px;

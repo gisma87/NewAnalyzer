@@ -1,6 +1,5 @@
 .analytic__days {
-    background: #F5F6F7;
-    /*height: 866px;*/
+    background: #f5f6f7;
     padding: 80px 104px;
     box-sizing: border-box;
 }
@@ -8,5 +7,11 @@
 @media screen and (max-width: 768px) {
     .analytic__days {
         padding: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .analytic__days {
+        padding: 19px 16px 38px;
     }
 }

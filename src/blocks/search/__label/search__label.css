@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 490px) {
     .search__label {
         width: 285px;
         margin: 0 0 64px;

@@ -13,3 +13,9 @@
         margin: 12px 0;
     }
 }
+
+@media screen and (max-width: 570px) {
+    .about-me__paragraph {
+        margin: 16px 0 0;
+    }
+}

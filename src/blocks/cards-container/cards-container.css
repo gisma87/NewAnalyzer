@@ -2,10 +2,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .cards-container {
+        grid-template-columns: repeat(auto-fill, 224px);
         grid-gap: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+        margin: 0 auto;
     }
 }

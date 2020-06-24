@@ -1,3 +1,9 @@
 .analytic__first-column {
     min-width: 104px;
 }
+
+@media screen and (max-width: 450px) {
+    .analytic__first-column {
+        min-width: 80px;
+    }
+}

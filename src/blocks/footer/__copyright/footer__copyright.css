@@ -7,3 +7,11 @@
     color: #B6BCBF;
     margin: 0;
 }
+
+@media screen and (max-width: 730px) {
+    .footer__copyright {
+        order: 3;
+        margin-top: 40px;
+        min-width: 300px;
+    }
+}

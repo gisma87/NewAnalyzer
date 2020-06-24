@@ -8,8 +8,8 @@
     line-height: 24px;
     letter-spacing: .4px;
     text-transform: uppercase;
-    background: #2F71E5;
-    color: #FFF;
+    background: #2f71e5;
+    color: #fff;
 }
 
 .analytic__table-percent:last-child {
@@ -37,4 +37,10 @@
 }
 .analytic__table-percent:nth-of-type(7) {
     width: 34%;
+}
+
+@media screen and (max-width: 450px) {
+    .analytic__table-percent {
+        margin: 0 0 24px;
+    }
 }

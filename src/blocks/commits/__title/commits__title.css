@@ -13,3 +13,10 @@
         line-height: 34px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .commits__title {
+        width: 200px;
+        line-height: 40px;
+    }
+}

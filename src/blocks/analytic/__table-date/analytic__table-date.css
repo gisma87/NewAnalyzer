@@ -1,3 +1,9 @@
 .analytic__table-date {
     display: flex;
 }
+
+@media screen and (max-width: 450px) {
+    .analytic__table-date {
+        padding-top: 16px;
+    }
+}

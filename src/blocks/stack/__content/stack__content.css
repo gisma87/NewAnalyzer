@@ -1,5 +1,14 @@
 .stack__content {
     margin-top: 11px;
+    position: relative;
+    margin-right: 125px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1135px) {
+    .stack__content {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {

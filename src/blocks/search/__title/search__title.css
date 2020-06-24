@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 490px) {
     .search__title {
         width: 285px;
         margin: 30px 0 16px;

@@ -13,3 +13,17 @@
 .search-result__link .tick {
     margin-left: 5px;
 }
+
+@media screen and (max-width: 610px) {
+    .search-result__link {
+        min-width: 110px;
+        max-width: 111px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search-result__link {
+        max-width: 100%;
+        margin: 16px 0 0;
+    }
+}

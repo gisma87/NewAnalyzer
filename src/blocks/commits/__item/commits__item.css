@@ -16,3 +16,11 @@
         margin: 0 4px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .commits__item {
+        width: 288px;
+        height: 264px;
+        padding: 16px;
+    }
+}

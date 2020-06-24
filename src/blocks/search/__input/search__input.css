@@ -7,3 +7,10 @@
     padding-left: 25px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 490px) {
+    .search__input {
+        width: 288px;
+        height: 56px;
+    }
+}

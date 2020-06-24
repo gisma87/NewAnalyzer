@@ -10,14 +10,15 @@
     padding: 33px 104px 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
     .footer {
         padding: 21px 40px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 730px) {
     .footer {
         padding: 20px 16px;
+        flex-wrap: wrap;
     }
 }

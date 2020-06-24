@@ -5,3 +5,11 @@
     color: #1A1B22;
     padding-bottom: 64px;
 }
+
+@media screen and (max-width: 375px) {
+    .search-result__header {
+        flex-direction: column;
+        padding-bottom: 36px;
+        align-items: start;
+    }
+}

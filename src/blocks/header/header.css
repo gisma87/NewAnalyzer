@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .header {
         height: 58px;
     }

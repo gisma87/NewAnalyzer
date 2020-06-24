@@ -12,3 +12,9 @@
         margin: 0 0 16px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .about__title {
+        margin: 0 0 20px;
+    }
+}

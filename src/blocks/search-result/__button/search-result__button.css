@@ -26,8 +26,8 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .search-result__button {
-        margin: 13px auto 0;
+        margin: 12px auto 0;
     }
 }
