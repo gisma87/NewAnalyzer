@@ -113,6 +113,7 @@ module.exports = {
             template: './index.html',
             filename: 'index.html',
             favicon: './images/favicon.ico',
+            chunks: ['main'],
             hash: true,
             minify: {
                 collapseWhitespace: isProd
@@ -122,6 +123,7 @@ module.exports = {
             template: './about.html',
             filename: 'about.html',
             favicon: './images/favicon.ico',
+            chunks: ['about'],
             minify: {
                 collapseWhitespace: isProd
             }
@@ -130,6 +132,7 @@ module.exports = {
             template: './analytic.html',
             filename: 'analytic.html',
             favicon: './images/favicon.ico',
+            chunks: ['analytic'],
             minify: {
                 collapseWhitespace: isProd
             }
