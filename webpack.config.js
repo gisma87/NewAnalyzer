@@ -33,7 +33,6 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        // main: ['@babel/polyfill', './index.js'],
         main: './index.js',
         about: './about.js',
         analytic: './analytic.js'
