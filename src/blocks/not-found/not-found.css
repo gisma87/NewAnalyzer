@@ -1,0 +1,12 @@
+@import "./__img/not-found__img.css";
+@import "./__title/not-found__title.css";
+@import "./__text/not-found__text.css";
+
+.not-found {
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F6F7;
+}

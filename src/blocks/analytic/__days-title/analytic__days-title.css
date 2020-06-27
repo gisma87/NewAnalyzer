@@ -1,0 +1,13 @@
+.analytic__days-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .analytic__days-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

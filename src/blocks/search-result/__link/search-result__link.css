@@ -1,0 +1,29 @@
+.search-result__link {
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 8px;
+    margin-top: 6px;
+    color: black;
+    text-decoration: none;
+}
+
+.search-result__link .tick {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 610px) {
+    .search-result__link {
+        min-width: 110px;
+        max-width: 111px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search-result__link {
+        max-width: 100%;
+        margin: 16px 0 0;
+    }
+}

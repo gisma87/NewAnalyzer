@@ -1,0 +1,15 @@
+.analytic__table {
+    margin: 48px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .analytic__table {
+        margin: 40px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .analytic__table {
+        margin: 16px 0 0;
+    }
+}

@@ -1,0 +1,29 @@
+@import "./__title/stack__title.css";
+@import "./__content/stack__content.css";
+@import "./__tech/stack__tech.css";
+@import "./__items/stack__items.css";
+@import "./__item/stack__item.css";
+
+.stack {
+    min-height: 334px;
+    background: #F5F6F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 104px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1080px) {
+    .stack {
+        padding: 40px 40px 50px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .stack {
+        padding: 20px 16px 45px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}

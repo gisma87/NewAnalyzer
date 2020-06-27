@@ -1,0 +1,27 @@
+@import "./__title/about__title.css";
+@import "./__text/about__text.css";
+
+.about {
+    padding: 80px 0 74px 104px;
+    font-style: normal;
+    font-weight: normal;
+    color: #1A1B22;
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 30px 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about {
+        padding: 16px;
+    }
+}

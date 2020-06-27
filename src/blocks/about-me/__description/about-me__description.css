@@ -1,0 +1,16 @@
+.about-me__description {
+    margin-left: 56px;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__description {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .about-me__description {
+        margin: 24px 0 0;
+    }
+}

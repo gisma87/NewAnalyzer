@@ -1,0 +1,20 @@
+.about__title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0 0 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__title {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0 0 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about__title {
+        margin: 0 0 20px;
+    }
+}

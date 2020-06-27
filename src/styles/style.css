@@ -1,0 +1,15 @@
+@import "~normalize.css";
+@import "./fonts.css";
+@import "../blocks/container/container.css";
+@import "../blocks/search/search.css";
+@import "../blocks/header/header.css";
+@import "../blocks/menu/menu.css";
+@import "../blocks/search-result/search-result.css";
+@import "../blocks/cards-container/cards-container.css";
+@import "../blocks/card/card.css";
+@import "../blocks/about-me/about-me.css";
+@import "../blocks/footer/footer.css";
+@import "../blocks/wait/wait.css";
+@import "../blocks/circle-preloader/circle-preloader.css";
+@import "../blocks/not-found/not-found.css";
+@import "../blocks/over/over.css";

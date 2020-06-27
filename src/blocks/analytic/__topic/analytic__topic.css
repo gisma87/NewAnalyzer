@@ -1,0 +1,15 @@
+.analytic__topic {
+    padding: 80px 104px;
+}
+
+@media screen and (max-width: 768px) {
+    .analytic__topic {
+        padding: 64px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .analytic__topic {
+        padding: 16px 16px 24px;
+    }
+}

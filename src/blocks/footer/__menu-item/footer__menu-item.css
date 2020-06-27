@@ -1,0 +1,23 @@
+.footer__menu-item {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #1A1B22;
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 814px) {
+    .footer__menu-item {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__menu-item {
+        margin: 0;
+    }
+}

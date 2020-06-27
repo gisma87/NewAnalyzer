@@ -1,0 +1,21 @@
+.about-me__paragraph {
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin: 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__paragraph {
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .about-me__paragraph {
+        margin: 16px 0 0;
+    }
+}

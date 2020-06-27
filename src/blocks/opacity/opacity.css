@@ -1,0 +1,17 @@
+@import "./__item/opacity__item.css";
+
+.opacity {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .opacity {
+        display: none;
+    }
+}

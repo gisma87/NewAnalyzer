@@ -1,0 +1,24 @@
+.stack__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 68px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .stack__items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 43px 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .stack__items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 43px 10px;
+    }
+}

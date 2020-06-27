@@ -1,0 +1,17 @@
+.commits__text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 104px 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .commits__text {
+        margin: 0 0 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .commits__text {
+        margin: 0 0 16px;
+    }
+}

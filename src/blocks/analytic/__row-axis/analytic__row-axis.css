@@ -1,0 +1,12 @@
+.analytic__row-axis {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 104px;
+    padding-bottom: 13px;
+}
+
+@media screen and (max-width: 450px) {
+    .analytic__row-axis {
+        display: none;
+    }
+}

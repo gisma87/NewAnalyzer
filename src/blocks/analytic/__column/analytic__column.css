@@ -1,0 +1,12 @@
+.analytic__column {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #B6BCBF;
+}
+
+.analytic__column p {
+    margin: 0;
+}

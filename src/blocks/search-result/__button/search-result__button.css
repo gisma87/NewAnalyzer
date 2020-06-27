@@ -1,0 +1,33 @@
+.search-result__button {
+    background: #FFF;
+    border: #FFF;
+    border-radius: 80px;
+    height: 64px;
+    width: 288px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    margin: 64px auto 0;
+}
+
+.search-result__button:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .search-result__button {
+        margin: 22px auto 0;
+        height: 56px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search-result__button {
+        margin: 12px auto 0;
+    }
+}

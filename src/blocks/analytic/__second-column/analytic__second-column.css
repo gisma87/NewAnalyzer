@@ -1,0 +1,6 @@
+.analytic__second-column {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

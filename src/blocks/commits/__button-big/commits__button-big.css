@@ -1,0 +1,40 @@
+.commits__button-big {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .commits__button-big {
+        width: 288px;
+        height: 56px;
+        padding: 0;
+        margin: 24px auto 0;
+
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+
+        font-family: 'Roboto Regular', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1A1B22;
+        text-decoration: none;
+
+        cursor: pointer;
+    }
+}
+
+.commits__button-big:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
+
+.commits__button-big:focus {
+    transition: opacity 0.3s;
+    opacity: 0.9;
+}

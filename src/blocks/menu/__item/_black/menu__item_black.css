@@ -1,0 +1,8 @@
+.menu__item_black {
+    color: black;
+    box-shadow: inset 0 -3px 0 black;
+}
+
+.menu__item_black a {
+    color: black;
+}
