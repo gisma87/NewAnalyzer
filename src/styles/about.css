@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import "~swiper/css/swiper.min.css";
 @import "./fonts.css";
 @import "../blocks/container/container.css";
 @import "../blocks/header/header.css";

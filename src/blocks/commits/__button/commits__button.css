@@ -1,16 +1,22 @@
-.commits__button {
+.swiper-container .commits__button {
     width: 40px;
     height: 40px;
     background: black;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    --swiper-navigation-size: 0;
+    top: calc(50% - 53px);
+    margin: 0 14px;
 }
 
 .commits__button .tick {
     color: white;
     text-align: center;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container .commits__button {
+        display: none;
+    }
 }

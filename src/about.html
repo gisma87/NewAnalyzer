@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 288px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-slide {
+      max-width: 400px;
+      height: 288px;
+      background: #FFF;
+      border-radius: 16px;
+      padding: 24px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin: 0 8px;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -82,87 +103,99 @@
       <a href="https://github.com/gisma87" class="commits__link over" target="_blank">Открыть в Github<span class="tick">❯</span></a>
     </div>
     <div class="commits__slider-container">
-      <div class="commits__slider">
-        <div class="commits__item">
-          <p class="commits__data">14 августа, 2019</p>
-          <div class="commits__photo">
-            <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
-            <div class="commits__name-info">
-              <h3 class="commits__name">Мария Фёдорова</h3>
-              <p class="commits__email">mariiifed@yandex.ru</p>
+<!--      <div class="commits__slider">-->
+<!--      </div>-->
+      <!-- Swiper -->
+      <div class="swiper-container commits__slider">
+        <div class="swiper-wrapper">
+          <div class="commits__item swiper-slide">
+            <p class="commits__data">14 августа, 2019</p>
+            <div class="commits__photo">
+              <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
+              <div class="commits__name-info">
+                <h3 class="commits__name">Мария Фёдорова</h3>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
             </div>
+            <p class="commits__paragraph">
+              You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
+              Plugins > Available plugins and find and install Emmet plugin.
+            </p>
           </div>
-          <p class="commits__paragraph">
-            You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
-            Plugins > Available plugins and find and install Emmet plugin.
-          </p>
-        </div>
-        <div class="commits__item">
-          <p class="commits__data">14 августа, 2019</p>
-          <div class="commits__photo">
-            <img src="<%=require('./images/image-01.png')%>" alt="фото" class="commits__img">
-            <div class="commits__name-info">
-              <h3 class="commits__name">Антон Долинин</h3>
-              <p class="commits__email">anton@yandex.ru</p>
+          <div class="commits__item swiper-slide">
+            <p class="commits__data">14 августа, 2019</p>
+            <div class="commits__photo">
+              <img src="<%=require('./images/image-01.png')%>" alt="фото" class="commits__img">
+              <div class="commits__name-info">
+                <h3 class="commits__name">Антон Долинин</h3>
+                <p class="commits__email">anton@yandex.ru</p>
+              </div>
             </div>
+            <p class="commits__paragraph">
+              Emmet (formerly Zen Coding) is a web-
+              developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
           </div>
-          <p class="commits__paragraph">
-            Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.
-          </p>
-        </div>
-        <div class="commits__item">
-          <p class="commits__data">14 августа, 2019</p>
-          <div class="commits__photo">
-            <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
-            <div class="commits__name-info">
-              <h3 class="commits__name">Мария Фёдорова</h3>
-              <p class="commits__email">mariiifed@yandex.ru</p>
+          <div class="commits__item swiper-slide">
+            <p class="commits__data">14 августа, 2019</p>
+            <div class="commits__photo">
+              <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
+              <div class="commits__name-info">
+                <h3 class="commits__name">Мария Фёдорова</h3>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
             </div>
+            <p class="commits__paragraph">
+              You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
+              Plugins > Available plugins and find and install Emmet plugin.
+            </p>
           </div>
-          <p class="commits__paragraph">
-            You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
-            Plugins > Available plugins and find and install Emmet plugin.
-          </p>
-        </div>
-        <div class="commits__item">
-          <p class="commits__data">14 августа, 2019</p>
-          <div class="commits__photo">
-            <img src="<%=require('./images/image-03.png')%>" alt="фото" class="commits__img">
-            <div class="commits__name-info">
-              <h3 class="commits__name">Инга Иванова</h3>
-              <p class="commits__email">ingaiva@yandex.ru</p>
+          <div class="commits__item swiper-slide">
+            <p class="commits__data">14 августа, 2019</p>
+            <div class="commits__photo">
+              <img src="<%=require('./images/image-03.png')%>" alt="фото" class="commits__img">
+              <div class="commits__name-info">
+                <h3 class="commits__name">Инга Иванова</h3>
+                <p class="commits__email">ingaiva@yandex.ru</p>
+              </div>
             </div>
+            <p class="commits__paragraph">
+              With Emmet, you can type CSS-like expressions
+              that can be dynamically parsed, and produce
+              output depending on what you type in the abb...
+            </p>
           </div>
-          <p class="commits__paragraph">
-            With Emmet, you can type CSS-like expressions
-            that can be dynamically parsed, and produce
-            output depending on what you type in the abb...
-          </p>
-        </div>
-        <div class="commits__item">
-          <p class="commits__data">14 августа, 2019</p>
-          <div class="commits__photo">
-            <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
-            <div class="commits__name-info">
-              <h3 class="commits__name">Мария Фёдорова</h3>
-              <p class="commits__email">mariiifed@yandex.ru</p>
+          <div class="commits__item swiper-slide">
+            <p class="commits__data">14 августа, 2019</p>
+            <div class="commits__photo">
+              <img src="<%=require('./images/image-04.png')%>" alt="фото" class="commits__img">
+              <div class="commits__name-info">
+                <h3 class="commits__name">Мария Фёдорова</h3>
+                <p class="commits__email">mariiifed@yandex.ru</p>
+              </div>
             </div>
+            <p class="commits__paragraph">
+              You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
+              Plugins > Available plugins and find and install Emmet plugin.
+            </p>
           </div>
-          <p class="commits__paragraph">
-            You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools >
-            Plugins > Available plugins and find and install Emmet plugin.
-          </p>
         </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next commits__button over"><span class="tick">❯</span></div>
+        <div class="swiper-button-prev commits__button over"><span class="tick">❮</span></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination commits__pagination"></div>
       </div>
-      <div class="commits__buttons">
-        <div class="commits__button over"><span class="tick">❮</span></div>
-        <div class="commits__button over"><span class="tick">❯</span></div>
-      </div>
-      <div class="opacity">
-        <div class="opacity__item"></div>
-        <div class="opacity__item"></div>
-      </div>
+
+
+<!--      <div class="commits__buttons">-->
+<!--        <div class="commits__button over"><span class="tick">❮</span></div>-->
+<!--        <div class="commits__button over"><span class="tick">❯</span></div>-->
+<!--      </div>-->
+<!--      <div class="opacity">-->
+<!--        <div class="opacity__item"></div>-->
+<!--        <div class="opacity__item"></div>-->
+<!--      </div>-->
       <button type="button" class="commits__button-big over">Открыть в GitHub</button>
     </div>
 

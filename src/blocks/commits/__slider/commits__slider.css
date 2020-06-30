@@ -1,13 +1,18 @@
 .commits__slider {
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    width: 2080px;
-    margin-left: -22.5%;
+    height: 356px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .commits__slider {
+        height: 295px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .commits__slider {
-        margin-left: -210%;
+        height: 300px;
     }
 }
