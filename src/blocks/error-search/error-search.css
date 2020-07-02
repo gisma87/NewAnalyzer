@@ -1,0 +1,21 @@
+.error-search {
+    height: 374px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F6F7;
+}
+
+.error-search__title {
+    max-width: 821px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    color: darkred;
+    border: 3px solid red;
+    padding: 30px;
+}

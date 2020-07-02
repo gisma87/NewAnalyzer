@@ -21,7 +21,7 @@
     </header>
     <div class="search__container">
       <h1 class="search__title">Что в мире творится?</h1>
-      <form action="#" name="search">
+      <form action="#" name="search" class="search__form" novalidate>
         <label for="search" class="search__label">
           Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
         </label>
@@ -38,6 +38,11 @@
         </div>
       </form>
     </div>
+  </section>
+  <section class="error-search">
+    <h3 class="error-search__title">Во время запроса произошла ошибка. <br>
+      Возможно, проблема с соединением или сервер недоступен. <br>
+      Подождите немного и попробуйте ещё раз</h3>
   </section>
   <section class="wait">
     <i class="circle-preloader"></i>
@@ -60,93 +65,22 @@
       </a>
     </div>
     <div class="cards-container">
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">Национальное достояние – парки</h3>
-          <p class="card__paragraph">
-            В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
-            парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-          </p>
+      <template id="tmpl-card">
+        <div class="card">
+          <img class="card__img" src="<%=require('./images/notphoto.png')%>" alt="фото">
+          <div class="card__content">
+            <h4 class="card__date">2 августа, 2019</h4>
+            <h3 class="card__title">Национальное достояние – парки</h3>
+            <p class="card__paragraph">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
+              парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+          </div>
+          <div class="card__link-container">
+            <a class="card__link" href="#">Лента.ру</a>
+          </div>
         </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Лента.ру</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp02.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="card__paragraph">
-            Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую
-            красоту одного из местных чудес природы.
-          </p>
-
-        </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Медуза</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp03.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-          <p class="card__paragraph">
-            Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот
-            раз он отправился в Двинско-Пинежскую тайгу, где...
-          </p>
-        </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Риа</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp02.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="card__paragraph">
-            Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую
-            красоту одного из местных чудес природы.
-          </p>
-
-        </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Медуза</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">Национальное достояние – парки</h3>
-          <p class="card__paragraph">
-            В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных
-            парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-          </p>
-        </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Лента.ру</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__img" src="<%=require('./images/card__tmp02.jpg')%>" alt="фото">
-        <div class="card__content">
-          <h4 class="card__date">2 августа, 2019</h4>
-          <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="card__paragraph">
-            Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую
-            красоту одного из местных чудес природы.
-          </p>
-
-        </div>
-        <div class="card__link-container">
-          <a class="card__link" href="#">Медуза</a>
-        </div>
-      </div>
+      </template>
     </div>
     <button type="button" class="search-result__button over">Показать еще</button>
   </section>
@@ -168,7 +102,8 @@
       <ul class="footer__menu">
         <li><a href="./index.html" class="footer__menu-item over">Главная</a></li>
         <li><a href="./about.html" class="footer__menu-item over">О проекте</a></li>
-        <li><a href="https://praktikum.yandex.ru/" class="footer__menu-item over" target="_blank">Яндекс.Практикум</a></li>
+        <li><a href="https://praktikum.yandex.ru/" class="footer__menu-item over" target="_blank">Яндекс.Практикум</a>
+        </li>
       </ul>
     </nav>
     <ul class="footer__links">
