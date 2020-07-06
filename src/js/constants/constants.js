@@ -1,7 +1,9 @@
 const API_KEY = '4ae594cae44745159670d56507226f52';
 const BASE_URL = 'https://praktikum.tk/news/v2/everything?';
 const TEMPLATE_NEWS_CARD = document.querySelector('#tmpl-card');
+const TEMPLATE_COMMIT_CARD = document.querySelector('#tmpl-card-commit');
 const CARD_CONTAINER = document.querySelector('.cards-container');
+const COMMIT_CONTAINER = document.querySelector('.swiper-wrapper');
 const SECTION_SEARCH_RESULT = document.querySelector('.search-result');
 const SECTION_PRELOADER = document.querySelector('.wait');
 const SECTION_NOT_FOUND = document.querySelector('.not-found');
@@ -58,5 +60,7 @@ export {
     WEEK_IN_DAYS,
     DATE_NOW,
     DAY_IN_TABLE,
-    PERCENT_IN_TABLE
+    PERCENT_IN_TABLE,
+    TEMPLATE_COMMIT_CARD,
+    COMMIT_CONTAINER
 };

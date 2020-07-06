@@ -1,1 +1,15 @@
-// Класс, аналогичный NewsApi, но отвечает за взаимодействие с Github. Вместо метода getNews у этого класса метод getCommits.
+export default class GithubApi {
+    constructor(baseUrl) {
+        this.baseUrl = baseUrl;
+    }
+
+    getCommits() {
+        return fetch(this.baseUrl)
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject(`Что-то пошло не так: ${res.status}`);
+            });
+    }
+}

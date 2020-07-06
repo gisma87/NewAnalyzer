@@ -8,7 +8,6 @@ import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
 import NewsApi from "./js/modules/NewsApi";
 import SearchInput from "./js/components/SearchInput";
-// import DataStorage from "./js/modules/DataStorage";
 
 const cardList = new NewsCardList(CARD_CONTAINER, new NewsCard());
 const apiCard = new NewsApi(BASE_URL, API_KEY);
