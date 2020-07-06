@@ -1,8 +1,10 @@
 import {
     WEEK_IN_DAYS,
     DAY_IN_MS,
-    PERCENT_IN_TABLE
+    PERCENT_IN_TABLE,
 } from '../constants/constants';
+import {countWordInText} from "../utils/countWordInText";
+import {countWordInTitle} from "../utils/countWordInTitle";
 
 export default class DataGraph {
     constructor(res) {
@@ -22,31 +24,36 @@ export default class DataGraph {
         })
     }
 
-    // вставляет данные из массива datesShort в массив DOM-элементов DAY_IN_TABLE через textContent
+// вставляет данные из массива datesShort в массив DOM-элементов DAY_IN_TABLE через textContent
     renderDatesGraph(datesShort, DAY_IN_TABLE) {
         DAY_IN_TABLE.forEach((item, i) => {
             item.textContent = datesShort[i];
         });
     }
 
-    // Возвращает массив из дат полученных из res.articles в формате [{day: "numeric", weekday: 'short'}]
+// Изменяем в массиве формат даты, устанавливаем по типу: [{day: "numeric", weekday: 'short'}]
     cardDates() {
         this.res.articles.forEach(item => {
             item.publishedAt = new Date(item.publishedAt)
         });
         return this.res.articles.map(item => {
             item.publishedAt = `${item.publishedAt.toLocaleString("ru", {day: "numeric"})}, ${item.publishedAt.toLocaleString("ru", {weekday: 'short'})}`
-            return item.publishedAt
+            return item
         })
     }
-// проходит по массиву cardsDates находит повторяющиеся элементы datesShort[i] и отрисовыввает шкалу в PERCENT_IN_TABLE основываясь на length текущей итерации
+
+// проходит по массиву cardsDates находит повторяющиеся элементы datesShort[i] и отрисовыввает шкалу
+// в PERCENT_IN_TABLE основываясь на сумме WORD в title и description полученого массива в текущей итерации
     renderGraph(cardsDates, datesShort) {
         for (let i = 0; i < WEEK_IN_DAYS; i++) {
             const a = cardsDates.filter(item => {
-                return item === datesShort[i]
+                return item.publishedAt === datesShort[i]
             })
-            PERCENT_IN_TABLE[i].textContent = a.length;
-            PERCENT_IN_TABLE[i].style.width = `${a.length}%`;
+
+            const sumWords = countWordInTitle(a) + countWordInText(a);
+
+            PERCENT_IN_TABLE[i].textContent = sumWords;
+            PERCENT_IN_TABLE[i].style.width = `${sumWords}%`;
         }
     }
 }

@@ -33,6 +33,7 @@ export default class SearchInput {
 
             this.classApiCard.getNews(FROM.toISOString(), TO.toISOString(), INPUT_SEARCH.value)
                 .then(result => {
+                    console.log(result.articles);
                     this.checkResults(result.articles);
                     this.sendData(INPUT_SEARCH.value, result);
                     SECTION_PRELOADER.style = 'display: none;';

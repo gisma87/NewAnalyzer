@@ -10,7 +10,7 @@ import {
     DAY_IN_TABLE,
     DATE_NOW
 } from './js/constants/constants';
-
+import {countWordInTitle} from "./js/utils/countWordInTitle";
 import Statistics from "./js/components/Statistics";
 
 // определяем текущий месяц
@@ -25,34 +25,13 @@ WORD_QUERY.textContent = WORD;
 // отображаем количество статей за неделю
 TOTAL_RESULT.textContent = RES_LOCAL_STORAGE.totalResults;
 
-// считаем сколько раз слово встречается в заголовках
-let countWordInTitle = 0;
-RES_LOCAL_STORAGE.articles.forEach(function (item, i) {
-    if (RES_LOCAL_STORAGE.articles[i].title) {
-        if (RES_LOCAL_STORAGE.articles[i].title.toLowerCase().includes(WORD.toLowerCase())) {
-            countWordInTitle++;
-        }
-        return countWordInTitle;
-    }
-});
 // отображаем количество упоминаний в заголовках
-SUM_WORD_IN_TITLE.textContent = countWordInTitle;
+let arr = RES_LOCAL_STORAGE.articles;
+SUM_WORD_IN_TITLE.textContent = countWordInTitle(arr);
 
-// считаем сколько раз слово встречается в тексте
-let countWordInText = 0;
-RES_LOCAL_STORAGE.articles.forEach(function (item, i) {
-    if (RES_LOCAL_STORAGE.articles[i].description) {
-        if (RES_LOCAL_STORAGE.articles[i].description.toLowerCase().includes(WORD.toLowerCase())) {
-            countWordInText++;
-        }
-        return countWordInText;
-    }
-});
 
 // вписываем в таблицу текущий месяц
 MONTH.textContent = "(" + searchMonth(RES_LOCAL_STORAGE.articles) + ")";
-
-
 
 // создаём экземпляр класса графической таблицы 'аналитика по дням'
 const statistics = new Statistics(RES_LOCAL_STORAGE);
