@@ -2,6 +2,7 @@ import {
     FORM_SEARCH,
     FROM,
     INPUT_SEARCH,
+    BUTTONS_SEARCH,
     SECTION_ERROR_SEARCH,
     SECTION_NOT_FOUND,
     SECTION_PRELOADER,
@@ -27,6 +28,8 @@ export default class SearchInput {
             SECTION_SEARCH_RESULT.style = 'display: none;';
             SECTION_NOT_FOUND.style = 'display: none;';
             SECTION_PRELOADER.style = 'display: flex;';
+            INPUT_SEARCH.disabled = true;
+            BUTTONS_SEARCH.disabled = true;
 
             this.classApiCard.getNews(FROM.toISOString(), TO.toISOString(), INPUT_SEARCH.value)
                 .then(result => {
@@ -34,6 +37,8 @@ export default class SearchInput {
                     this.checkResults(result.articles);
                     this.sendData(INPUT_SEARCH.value, result);
                     SECTION_PRELOADER.style = 'display: none;';
+                    INPUT_SEARCH.disabled = false;
+                    BUTTONS_SEARCH.disabled = false;
                 })
                 .catch(err => {
                     console.log(`Ошибка: ${err}`);
@@ -44,6 +49,8 @@ export default class SearchInput {
         } else {
             SECTION_PRELOADER.style = 'display: none;';
             SECTION_SEARCH_RESULT.style = 'display: none;';
+            INPUT_SEARCH.disabled = false;
+            BUTTONS_SEARCH.disabled = false;
         }
     }
 
@@ -78,7 +85,6 @@ export default class SearchInput {
     validateInput() {
         if (INPUT_SEARCH.value === '') {
             ERROR_INPUT.textContent = "Нужно ввести слово для поиска";
-            // SECTION_PRELOADER.style = 'display: none;';
             return false;
         } else {
             ERROR_INPUT.textContent = '';

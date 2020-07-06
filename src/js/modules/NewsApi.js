@@ -1,5 +1,3 @@
-// Отвечает за взаимодействие с NewsAPI. У класса есть конструктор, принимающий опции и единственный обязательный
-// метод getNews. getNews возвращает список новостей на основе запроса.
 export default class NewsApi {
     constructor(baseUrl, key) {
         this.baseUrl = baseUrl;
