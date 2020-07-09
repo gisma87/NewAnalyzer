@@ -1,0 +1,9 @@
+.about-me__stack-item {
+    margin-top: 5px;
+    cursor: pointer;
+}
+.about-me__stack-item:hover {
+    transform: translateX(5px) scale(1.005);
+    color: green;
+    transition: .3s;
+}

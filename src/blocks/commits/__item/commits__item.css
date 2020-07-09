@@ -1,24 +1,24 @@
-.commits__item {
+.swiper-wrapper .commits__item {
     width: 400px;
     height: 288px;
-    background: #FFF;
+    background: #fff;
     border-radius: 16px;
     padding: 24px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 0 8px;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .commits__item {
+    .swiper-wrapper .commits__item {
         width: 336px;
         height: 242px;
-        margin: 0 4px;
+        margin: 0 -4px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .commits__item {
+    .swiper-wrapper .commits__item {
         width: 288px;
         height: 264px;
         padding: 16px;

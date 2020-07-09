@@ -4,7 +4,8 @@
 
 .not-found {
     height: 374px;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

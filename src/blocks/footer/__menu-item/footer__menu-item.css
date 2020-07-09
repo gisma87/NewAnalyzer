@@ -10,9 +10,9 @@
     text-align: center;
 }
 
-@media screen and (max-width: 814px) {
+@media screen and (max-width: 860px) {
     .footer__menu-item {
-        margin-left: 25px;
+        margin-left: 10px;
     }
 }
 
