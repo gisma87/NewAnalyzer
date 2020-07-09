@@ -10,7 +10,7 @@ import {
     DAY_IN_TABLE,
     DATE_NOW
 } from './js/constants/constants';
-import {countWordInTitle} from "./js/utils/countWordInTitle";
+import {countWordInObjects} from "./js/utils/countWordInObjects";
 import Statistics from "./js/components/Statistics";
 
 // определяем текущий месяц
@@ -26,9 +26,8 @@ WORD_QUERY.textContent = WORD;
 TOTAL_RESULT.textContent = RES_LOCAL_STORAGE.totalResults;
 
 // отображаем количество упоминаний в заголовках
-let arr = RES_LOCAL_STORAGE.articles;
-SUM_WORD_IN_TITLE.textContent = countWordInTitle(arr);
-
+const arr = RES_LOCAL_STORAGE.articles;
+SUM_WORD_IN_TITLE.textContent = countWordInObjects(arr, 'title');
 
 // вписываем в таблицу текущий месяц
 MONTH.textContent = "(" + searchMonth(RES_LOCAL_STORAGE.articles) + ")";

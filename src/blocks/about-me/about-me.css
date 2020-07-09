@@ -2,6 +2,8 @@
 @import "./__description/about-me__description.css";
 @import "./__title/about-me__title.css";
 @import "./__paragraph/about-me__paragraph.css";
+@import "./__stack/about-me__stack.css";
+@import "./__stack-item/about-me__stack-item.css";
 
 .about-me {
     display: flex;
@@ -14,14 +16,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .about-me {
         align-items: center;
         padding: 40px;
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 700px) {
     .about-me {
         padding: 32px 16px;
         flex-direction: column;

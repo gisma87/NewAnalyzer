@@ -2,15 +2,10 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .footer__menu {
-        margin-left: -45px;
-    }
-}
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .footer__menu {
         flex-direction: column;
         height: 120px;

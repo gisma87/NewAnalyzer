@@ -36,16 +36,17 @@ export default class SearchInput {
                     console.log(result.articles);
                     this.checkResults(result.articles);
                     this.sendData(INPUT_SEARCH.value, result);
-                    SECTION_PRELOADER.style = 'display: none;';
-                    INPUT_SEARCH.disabled = false;
-                    BUTTONS_SEARCH.disabled = false;
                 })
                 .catch(err => {
                     console.log(`Ошибка: ${err}`);
-                    SECTION_PRELOADER.style = 'display: none;';
                     SECTION_ERROR_SEARCH.style = 'display: flex;';
 
                 })
+                .finally(() => {
+                    SECTION_PRELOADER.style = 'display: none;';
+                    INPUT_SEARCH.disabled = false;
+                    BUTTONS_SEARCH.disabled = false;
+                });
         } else {
             SECTION_PRELOADER.style = 'display: none;';
             SECTION_SEARCH_RESULT.style = 'display: none;';

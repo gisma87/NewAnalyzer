@@ -3,8 +3,8 @@ import {
     DAY_IN_MS,
     PERCENT_IN_TABLE,
 } from '../constants/constants';
-import {countWordInText} from "../utils/countWordInText";
-import {countWordInTitle} from "../utils/countWordInTitle";
+
+import {countWordInObjects} from "../utils/countWordInObjects";
 
 export default class DataGraph {
     constructor(res) {
@@ -43,14 +43,15 @@ export default class DataGraph {
     }
 
 // проходит по массиву cardsDates находит повторяющиеся элементы datesShort[i] и отрисовыввает шкалу
-// в PERCENT_IN_TABLE основываясь на сумме WORD в title и description полученого массива в текущей итерации
+// в PERCENT_IN_TABLE основываясь на сумме WORD в title и description полученного массива в текущей итерации
     renderGraph(cardsDates, datesShort) {
         for (let i = 0; i < WEEK_IN_DAYS; i++) {
-            const a = cardsDates.filter(item => {
+            const arr = cardsDates.filter(item => {
                 return item.publishedAt === datesShort[i]
-            })
+            });
 
-            const sumWords = countWordInTitle(a) + countWordInText(a);
+            const sumWords = countWordInObjects(arr, 'title') + countWordInObjects(arr, 'description');
+            console.log('Сумма равна:  ' + sumWords);
 
             PERCENT_IN_TABLE[i].textContent = sumWords;
             PERCENT_IN_TABLE[i].style.width = `${sumWords}%`;

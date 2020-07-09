@@ -17,7 +17,7 @@ export default class NewsCardList {
     }
 
     clear() {
-        this.container.innerHTML = '';
+        while (this.container.firstChild) this.container.removeChild(this.container.firstChild);
         this.lastCard = 0;
     }
 
