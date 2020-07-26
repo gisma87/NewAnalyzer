@@ -10,7 +10,7 @@
         height: 350px;
     }
 }
-
+ 
 @media screen and (max-width: 900px) {
     .about-me__photo {
         width: 232px;
