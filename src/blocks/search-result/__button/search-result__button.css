@@ -12,11 +12,22 @@
     line-height: 24px;
     cursor: pointer;
     margin: 64px auto 0;
+
+    position: relative;
+    top: 0;
+    transition: all 1s ease 0s;
 }
 
 .search-result__button:hover {
-    transition: opacity 0.3s;
-    opacity: 0.8;
+    top: -10px;
+    transition: all 0.5s ease 0.2s;
+    box-shadow: 0 5px 0 0 #0c5b52;
+}
+
+.search-result__button:active {
+    top: -7px;
+    transition: all 0.1s ease 0s;
+    box-shadow: 0 2px 0 0 #0c5b52;
 }
 
 @media screen and (max-width: 768px) {

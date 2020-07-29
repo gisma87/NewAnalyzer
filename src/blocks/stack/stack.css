@@ -4,6 +4,39 @@
 @import "./__items/stack__items.css";
 @import "./__item/stack__item.css";
 
+@keyframes snake {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+.stack:hover .animated {
+    animation-name:snake;
+    animation-duration: .6s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.delay-250 {
+    animation-delay: 250ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+.delay-750 {
+    animation-delay: 750ms;
+}
+
+.delay-1000 {
+    animation-delay: 1000ms;
+}
+
 .stack {
     min-height: 334px;
     background: #F5F6F7;

@@ -14,3 +14,7 @@
 @import "../blocks/not-found/not-found.css";
 @import "../blocks/over/over.css";
 @import "../blocks/error-search/error-search.css";
+
+button:active, button:focus  {
+    outline: none;
+}

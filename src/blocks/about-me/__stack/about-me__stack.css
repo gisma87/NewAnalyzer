@@ -5,3 +5,7 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+.about-me__stack ul {
+    margin-bottom: 0;
+}
