@@ -1,5 +1,6 @@
 const API_KEY = '4ae594cae44745159670d56507226f52';
-const BASE_URL = 'https://praktikum.tk/news/v2/everything?';
+// const BASE_URL = 'https://praktikum.tk/news/v2/everything?';
+const BASE_URL = 'https://nomoreparties.co/news/v2/everything?';
 const TEMPLATE_NEWS_CARD = document.querySelector('#tmpl-card');
 const TEMPLATE_COMMIT_CARD = document.querySelector('#tmpl-card-commit');
 const CARD_CONTAINER = document.querySelector('.cards-container');
